@@ -1,0 +1,30 @@
+body{margin-top:0;margin-left:0;margin-right:0;z-index:-1}
+body {
+    background: linear-gradient(to bottom, #fff 0%,#aaa 100%);
+    height: 1200px;
+}
+
+.header{background-color:#fff;box-shadow: 1px 10px 10px #ddd;position:absolute;width:100%;right:0;}
+.header .row:first-child{margin-top:65px;}
+
+.footer{background-color:#fff;box-shadow: 1px -10px 10px #ddd;position:fixed;width:100%;
+   left:0px;
+   bottom:0px;color:#1a2f4d;font-size:14px;font-weight:bold;padding: 30px 0; 
+}
+
+
+.container{background-color:#fff;height:100%;width:65%;}
+
+.especialies{margin-top: 100px;}
+
+ul li{text-decoration:none;display:inline-block;}
+
+li a{color:#1a2f4d;font-size:20px;margin-left:20px;font-weight:bold;font-family:serif;}
+
+.tel .call-today{color:#adbcd1;font-size:24px;}
+.tel .tel-number{color:#1a2f4d;font-size:28px;}
+
+.menu{margin: 10px 0;}
+
+
+
