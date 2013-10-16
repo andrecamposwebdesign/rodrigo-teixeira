@@ -18,7 +18,7 @@ body {
 
 ul li{text-decoration:none;display:inline-block;}
 
-li a{color:#1a2f4d;font-size:20px;margin-left:20px;font-weight:bold;font-family:serif;}
+li a{color:#1a2f4d;font-size:16px;margin-left:20px;font-weight:bold;font-family:serif;}
 li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 .selected a{color:#adbcd1;}
 
@@ -38,7 +38,7 @@ li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 .areas:last-child{background-image:none;}
 
 .logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 95px;}
-.logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');background-position: 6px 0px;height: 95px;}
+.logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');background-position: 6px 0px;height: 95px;width:305px;}
 
 
 .copyright{color:#adbcd1;}
@@ -51,7 +51,8 @@ li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 @media (max-width: 979px) { 
 	.areas{padding-left:0;}
 	.container{width:100%;}
-	.address{margin-bottom:20px;}
+	.address, .phones{margin-bottom:20px;}
+	.tel{float:left;}
 
  }
  
