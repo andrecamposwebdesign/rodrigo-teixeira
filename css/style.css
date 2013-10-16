@@ -1,7 +1,7 @@
 body{margin-top:0;margin-left:0;margin-right:0;z-index:-1}
 body {
     background: linear-gradient(to bottom, #fff 0%,#aaa 100%);
-    height: 1200px;
+
 }
 
 .header{background-color:#fff;box-shadow: 1px 10px 10px #ddd;position:absolute;width:100%;right:0;}
@@ -13,9 +13,8 @@ body {
 }
 
 
-.container{background-color:#fff;height:100%;width:65%;}
+.container{background-color:#fff;height:100%;width:70%;}
 
-.especialies{margin-top: 100px;}
 
 ul li{text-decoration:none;display:inline-block;}
 
@@ -25,6 +24,17 @@ li a{color:#1a2f4d;font-size:20px;margin-left:20px;font-weight:bold;font-family:
 .tel .tel-number{color:#1a2f4d;font-size:28px;}
 
 .menu{margin: 10px 0;}
+
+.practice-area{color:#1a2f4d;font-size:22px;}
+.area-examples{color:#adbcd1;font-size:18px;}
+
+.especialies{margin-top: 100px;}
+
+.areas{background-image:url('../img/sprite.png');background-position: 144px -100px;height:300px;}
+
+.logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 95px;}
+.logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');background-position: 6px 0px;height: 95px;}
+.logo-box{width:305px;}
 
 
 
