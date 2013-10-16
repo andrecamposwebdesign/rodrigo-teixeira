@@ -1,56 +1,85 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Teixeira Advogados</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <script type="text/javascript" src="../js/javascript.js"></script>
 <link rel="stylesheet" href="../css/style.css">
-
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<!-- HEADER -->
 <div class="row">
 	<div class="header col-lg-12">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-12">
-					<div class="logo"></div>
-				</div>
-				
-				<div class="col-lg-5 col-md-12 pull-right tel">
-					<span class="call-today">Ligue hoje:</span> <span class="tel-number">(21) 2264-8332</span><br>
-				</div><br><br>
-				<div class="col-lg-7 col-md-12 menu pull-right">
-					<ul class="unstyled">
-						<li class="selected"><a href="">Home</a></li>
-						<li><a href="">Escritório</a></li>
-						<li><a href="">Áreas de atuação</a></li>
-						<li><a href="">Notícias</a></li>
-						<li><a href="">Contato</a></li>
-					</ul>
-				</div>
+			<div class="col-lg-5 col-md-12">
+				<div class="logo"></div>
 			</div>
-
+			<div class="col-lg-5 col-md-12 pull-right tel">
+				<span class="call-today">Ligue hoje:</span> <span class="tel-number">(21) 2264-8332</span><br>
+			</div><br><br>
+			<div class="col-lg-7 col-md-12 menu pull-right">
+				<ul class="unstyled">
+					<li class="selected"><a href="">Home</a></li>
+					<li><a href="">Escritório</a></li>
+					<li><a href="">Áreas de atuação</a></li>
+					<li><a href="">Notícias</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
-
 <div class="container">
-	<div class="row">
-		<div class="content">
-
-
-
-			<div class="col-lg-4">
-				<form role="form">
+	<div class="row"> 
+		<div class="panel-group col-lg-12 hide" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					<span class="area-arrow">&#9658;</span> Família </a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-body">
+						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					<span class="area-arrow">&#9658;</span> Criminal </a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+					<div class="panel-body">
+						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					<span class="area-arrow">&#9658;</span> Desaposentação </a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+					<div class="panel-body">
+						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hide">
+			<form role="form">
+				<div class="col-lg-5 contact">
 				  	<div class="form-group col-lg-12">
 				    	<label for="client-name">Nome</label>
 				    	<input type="text" class="form-control" id="client-name">
@@ -59,75 +88,73 @@
 				    	<label for="client-email">E-mail</label>
 				    	<input type="email" class="form-control" id="client-email">
 				  	</div>
-				  	<div class="form-group col-lg-12">
-				    	<label for="client-phone">Telefone para contato</label>
+				  	<div class="form-group col-lg-6">
+				    	<label for="client-phone">Telefone</label>
 				    	<input type="tel" class="form-control" id="client-phone">
 				  	</div>
-				  	<div class="form-group col-lg-12">
+			  	</div>
+			  	<div class="col-lg-6 contact">
+			  		<div class="form-group col-lg-12">
 				    	<label for="message">Mensagem</label>
-				    	<textarea class="form-control" rows="3"></textarea>
+				    	<textarea class="form-control" rows="8"></textarea>
 				  	</div>
-				  	<div class="col-lg-12">
-				  		<button type="submit" class="btn btn-default">Enviar</button>
+				  	<div class="col-lg-6">
+				  		<button type="submit" class="btn btn-primary">Enviar</button>
 				  	</div>	
-				</form>
+			  	</div>
+			</form>
+		</div>	
+		<div class="banner col-lg-12"></div>
+		<div class="especialies">
+			<div class="col-lg-3 pull-left areas">
+				<div class="area-click">
+					<span class="practice-area">Cívil</span><br>
+					<span class="area-examples">Consumidor<br>Indenizações</span><br>
+					<div class="family-illustration"></div>
+					<div class="practice-area-preview">
+						Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização.
+					</div>
+					<button type="submit" class="btn btn-primary btn-small">Mais Informações</button>
+				</div>
 			</div>
-
-
-
-
-
-			<div class="banner col-lg-12 hide"></div>
-			<div class="especialies hide">
-				<div class="col-lg-3 pull-left areas">
-					<div class="area-click">
-						<span class="practice-area">Cívil</span><br>
-						<span class="area-examples">Consumidor<br>Indenizações</span><br>
-						<span class="practice-area-preview">
-							Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização e experiência prática capaz de coordenar e gerenciar os mais diversos tipos de litígios judiciais e assessorar juridicamente na elaboração de documentos, contratos, pareceres e opiniões.
-						</span>
-						<button type="submit" class="btn btn-primary btn-small">Mais Informação</button>
+			<div class="col-lg-3 pull-left areas">
+				<div class="area-click">
+					<span class="practice-area">Cívil</span><br>
+					<span class="area-examples">Consumidor<br>Indenizações</span><br>
+					<div class="criminal-illustration"></div>
+					<div class="practice-area-preview">
+						Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização.
 					</div>
+					<button type="submit" class="btn btn-primary btn-small">Mais Informações</button>
 				</div>
-				<div class="col-lg-3 pull-left areas">
-					<div class="area-click">
-						<span class="practice-area">Cívil</span><br>
-						<span class="area-examples">Consumidor<br>Indenizações</span><br>
-						<span class="practice-area-preview">
-							Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização e experiência prática capaz de coordenar e gerenciar os mais diversos tipos de litígios judiciais e assessorar juridicamente na elaboração de documentos, contratos, pareceres e opiniões.
-						</span>
-						<button type="submit" class="btn btn-primary btn-small">Mais Informação</button>
+			</div>
+			<div class="col-lg-3 pull-left areas">
+				<div class="area-click">
+					<span class="practice-area">Cívil</span><br>
+					<span class="area-examples">Consumidor<br>Indenizações</span><br>
+					<div class="retirement-illustration"></div>
+					<div class="practice-area-preview">
+						Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização.
 					</div>
+					<button type="submit" class="btn btn-primary btn-small">Mais Informações</button>
 				</div>
-				<div class="col-lg-3 pull-left areas">
-					<div class="area-click">
-						<span class="practice-area">Cívil</span><br>
-						<span class="area-examples">Consumidor<br>Indenizações</span><br>
-						<span class="practice-area-preview">
-							Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização e experiência prática capaz de coordenar e gerenciar os mais diversos tipos de litígios judiciais e assessorar juridicamente na elaboração de documentos, contratos, pareceres e opiniões.
-						</span>
-						<button type="submit" class="btn btn-primary btn-small">Mais Informação</button>
+			</div>
+			<div class="col-lg-3 pull-left areas">
+				<div class="area-click">
+					<span class="practice-area">Cívil</span><br>
+					<span class="area-examples">Consumidor<br>Indenizações</span><br>
+					<div class="audience-illustration"></div>
+					<div class="practice-area-preview">
+						Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização.
 					</div>
+					<button type="submit" class="btn btn-primary btn-small">Mais Informações</button>
 				</div>
-				<div class="col-lg-3 pull-left areas">
-					<div class="area-click">
-						<span class="practice-area">Cívil</span><br>
-						<span class="area-examples">Consumidor<br>Indenizações</span><br>
-						<span class="practice-area-preview">
-							Em nossa equipe, cada advogado responsável por uma área do escritório Carvalho, Fairbairn & Guidi possui especialização e experiência prática capaz de coordenar e gerenciar os mais diversos tipos de litígios judiciais e assessorar juridicamente na elaboração de documentos, contratos, pareceres e opiniões.
-						</span>
-						<button type="submit" class="btn btn-primary btn-small">Mais Informação</button>
-					</div>
-				</div>
-			</div>	
-		</div>
+			</div>
+		</div>	
 	</div>
 </div>
-
 <div class="row">
 	<div class="footer col-lg-12">
-
-
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 pull-left address">
@@ -140,30 +167,14 @@
 				</div>
 				
 				<div class="col-lg logo-trasparent pull-right"></div>
-				
 			</div>
-
 			<div class="row">
 				<div class="col-lg-12 pull-left copyright">
 					© 2013 All rights reserved - Todos direitos reservados
 				</div>
 			</div>
-
 		</div>
-
-
 	</div>
 </div>
-
-
-
-
-	
-			
-
-
-
-
-
 </body>
 </html>
