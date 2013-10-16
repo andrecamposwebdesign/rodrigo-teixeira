@@ -4,16 +4,19 @@ body {
 
 }
 
-.header{background-color:#fff;box-shadow: 1px 10px 10px #ddd;position:absolute;width:100%;right:0;}
+.header{background-color:#fff;box-shadow: 1px 5px 5px #ddd;position:absolute;width:100%;right:0;}
 .header .row:first-child{margin-top:65px;}
 
-.footer{background-color:#fff;box-shadow: 1px -10px 10px #ddd;position:fixed;width:100%;
+.footer{background-color:#fff;box-shadow: 1px -5px 5px #ddd;position:fixed;width:100%;
    left:0px;
    bottom:0px;color:#1a2f4d;font-size:14px;padding: 30px 0; 
 }
 
 
 .container{background-color:#fff;height:100%;width:70%;}
+
+.content{margin:20px 0;}
+
 
 
 ul li{text-decoration:none;display:inline-block;}
@@ -30,11 +33,12 @@ li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 .practice-area{color:#1a2f4d;font-size:22px;}
 .area-examples{color:#adbcd1;font-size:18px;}
 
-.especialies{margin-top: 100px;}
+.especialies{margin-top: 10px;}
 
-.areas{background-image:url('../img/sprite.png');background-position: 195px -100px;height:300px;padding-left:40px!important;}
+.areas{background-image:url('../img/sprite.png');background-position: 205px -42px;height:300px;
+width:100px;padding-left:40px!important;margin-bottom: 170px;}
 .area-click:hover{background-color:#eee;box-shadow:2px -2px 5px #eee;height:300px;width:150px;outline:3px solid #aaa;}
-.area-click{cursor:pointer;}
+.area-click{cursor:pointer;padding:20px;}
 .areas:last-child{background-image:none;}
 
 .logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 95px;}
@@ -43,7 +47,9 @@ li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 
 .copyright{color:#adbcd1;}
 
+.practice-area-preview{color:#666;font-size:13px;}
 
+.banner{background-image:url('../img/sprite.png');background-position: -31px 638px;height:240px;}
 
 
  
