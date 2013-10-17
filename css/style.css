@@ -3,7 +3,7 @@ body {background: linear-gradient(to bottom, #fff 0%,#ddd 100%);}
 .container{background-color:#fff;height:100%;width:70%;}
 
 /*HEADER*/
-.header{background-color:#fff;box-shadow: 1px 5px 5px #ddd;position:absolute;right:0;}
+.header{background-color:#fff;box-shadow: 1px 5px 5px #ddd;position:absolute;right:0;z-index: 1;}
 .header .row:first-child{margin-top:35px;}
 
 /*Logo*/
@@ -12,13 +12,16 @@ body {background: linear-gradient(to bottom, #fff 0%,#ddd 100%);}
 /*Call today*/
 .tel .call-today{color:#adbcd1;font-size:24px;}
 .tel .tel-number{color:#1a2f4d;font-size:28px;display:inline-block;}
+.tel{text-align:right;float:right;}
 
 /*Menu*/
 .selected a{color:#adbcd1;}
 ul li{text-decoration:none;display:inline-block;}
-li a{color:#1a2f4d;font-size:16px;margin-left:20px;font-weight:bold;font-family:serif;}
+li a{color:#1a2f4d;font-size:16px;margin-right:20px;font-weight:bold;font-family:serif;}
+li:last-child a{margin-right:0;}
 li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
-.menu{margin: 20px 0 5px;}
+.menu{margin: 20px 0 5px;text-align:right;float:right;}
+ul{padding-left:0;}
 
 /*HOME*/
 /*Banner*/
@@ -30,7 +33,7 @@ li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
 .areas{background-image:url('../img/sprite.png');background-position: 205px -42px;
 width:100px;}
 .area-click:hover{background-color:#eee;box-shadow:2px -2px 5px #eee;outline:3px solid #aaa;}
-.area-click{cursor:pointer;padding:5px 20px 20px;}
+.area-click{cursor:pointer;padding:5px 20px 20px;max-width:240px}
 .areas:last-child{background-image:none;}
 .practice-area-preview{color:#666;font-size:13px;padding:10px 0;}
 
@@ -38,6 +41,8 @@ width:100px;}
 .retirement-illustration{background-image:url('../img/sprite.png');background-position: 0px -1758px;height:151px;}
 .family-illustration{background-image:url('../img/sprite.png');background-position: 0px -1389px;height:151px;}
 .criminal-illustration{background-image:url('../img/sprite.png');background-position: 0px -1569px;height:151px;}
+.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{margin-top:10px;}
+
 
 /*AREAS SECTION*/
 .area-arrow{font-size:13px;}
@@ -52,21 +57,29 @@ background-position: 0px 0px;height: 95px;width:305px;}
 	left:0px;bottom:0px;color:#1a2f4d;font-size:14px;padding: 30px 0;}
 
 /*MEDIA QUERY*/
+
+@media (max-width: 1279px) { .areas{padding-left:0;background-image:none;} }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 979px) { 
-	.areas{padding-left:0;}
+	.areas{padding-left:0;background-image:none;margin-bottom:10px;}
 	.container{width:100%;}
 	.address, .phones{margin-bottom:20px;}
 	.tel{float:left;}
-	.logo{background-position: 0px 254px}
+	.logo{background-position: 0px -1192px;}
+	.logo-trasparent{background-position: 0px -1192px;}
+	li a{font-size:18px;}
+	li{margin-bottom:10px;}
  }
  
 /* Landscape phones and down */
 @media (max-width: 480px) { ul li{display:block;}
-	
+	.menu{float:left!important;text-align:left;}
+	.tel{float:left!important;text-align:left;}
  }
 
 /* Landscape phones and down */
 @media (max-width: 277px) {
-	.logo{background-position: 0px 183px;}
+	.logo{background-position: 0px -1264px;}
+	.logo-trasparent{background-position: 0px -1264px;}
  }
