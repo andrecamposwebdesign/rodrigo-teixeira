@@ -3,13 +3,17 @@
 <head>
 <title>Teixeira Advogados</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="../js/javascript.js"></script>
+
 <link rel="stylesheet" href="../css/style.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="../js/javascript.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -25,11 +29,11 @@
 				</div><br><br>
 				<div class="col-lg-7 col-md-12 menu">
 					<ul>
-						<li class="selected"><a href="">Home</a></li>
-						<li><a href="">Escritório</a></li>
-						<li><a href="">Áreas de atuação</a></li>
-						<li><a href="">Notícias</a></li>
-						<li><a href="">Contato</a></li>
+						<li class="selected"><a href="" class="home">Home</a></li>
+						<li><a href="" class="office">Escritório</a></li>
+						<li><a href="" class="practice-areas">Áreas de atuação</a></li>
+						<li><a href="" class="news">Notícias</a></li>
+						<li><a href="" class="contact">Contato</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -38,74 +42,6 @@
 </div>
 <div class="container">
 	<div class="row"> 
-		<div class="panel-group col-lg-12 hide" id="accordion">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					<span class="area-arrow">&#9658;</span> Família </a>
-					</h4>
-				</div>
-				<div id="collapseOne" class="panel-collapse collapse in">
-					<div class="panel-body">
-						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					<span class="area-arrow">&#9658;</span> Criminal </a>
-					</h4>
-				</div>
-				<div id="collapseTwo" class="panel-collapse collapse">
-					<div class="panel-body">
-						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-					<span class="area-arrow">&#9658;</span> Desaposentação </a>
-					</h4>
-				</div>
-				<div id="collapseThree" class="panel-collapse collapse">
-					<div class="panel-body">
-						 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="">
-			<form role="form">
-				<div class="col-lg-5 contact">
-				  	<div class="form-group col-lg-12">
-				    	<label for="client-name">Nome</label>
-				    	<input type="text" class="form-control" id="client-name">
-				  	</div>
-				  	<div class="form-group col-lg-12">
-				    	<label for="client-email">E-mail</label>
-				    	<input type="email" class="form-control" id="client-email">
-				  	</div>
-				  	<div class="form-group col-lg-6">
-				    	<label for="client-phone">Telefone</label>
-				    	<input type="tel" class="form-control" id="client-phone">
-				  	</div>
-			  	</div>
-			  	<div class="col-lg-6 contact">
-			  		<div class="form-group col-lg-12">
-				    	<label for="message">Mensagem</label>
-				    	<textarea class="form-control" rows="8"></textarea>
-				  	</div>
-				  	<div class="col-lg-6">
-				  		<button type="submit" class="btn btn-primary">Enviar</button>
-				  	</div>	
-			  	</div>
-			</form>
-		</div>	
 		<div class="banner col-lg-12 hide"></div>
 		<div class="especialies hide">
 			<div class="col-lg-3 col-xs-12 col-sm-6 col-md-6 pull-left areas">
@@ -152,7 +88,79 @@
 					<button type="submit" class="btn btn-primary btn-small">Mais Informações</button>
 				</div>
 			</div>
+		</div>
+		<div class="areas-template hide">
+			<br>
+			<div class="panel-group col-lg-12" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						<span class="area-arrow">&#9658;</span> Família </a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						<span class="area-arrow">&#9658;</span> Criminal </a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						<span class="area-arrow">&#9658;</span> Desaposentação </a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
 		</div>	
+		<div class="contact-template">
+			<form role="form" name="contactform" method="post" action="send_form_email.php">
+				<div class="col-lg-5 contact">
+				  	<div class="form-group col-lg-12">
+				    	<label for="client-name">Nome</label>
+				    	<input type="text" class="form-control" id="client-name" name="first_name">
+				  	</div>
+				  	<div class="form-group col-lg-12">
+				    	<label for="client-email">E-mail</label>
+				    	<input type="email" class="form-control" id="client-email" name="email">
+				  	</div>
+				  	<div class="form-group col-lg-6">
+				    	<label for="client-phone">Telefone</label>
+				    	<input type="tel" class="form-control" id="client-phone" name="telephone">
+				  	</div>
+			  	</div>
+			  	<div class="col-lg-6 contact">
+			  		<div class="form-group col-lg-12">
+				    	<label for="message">Explique seu problema</label>
+				    	<textarea class="form-control" rows="8" name="comments"></textarea>
+				  	</div>
+				  	<div class="col-lg-6">
+				  		<button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
+				  	</div>	
+			  	</div>
+			</form>
+		</div>		
 	</div>
 </div>
 <div class="row">
@@ -180,5 +188,6 @@
 		</div>
 	</div>
 </div>
+
 </body>
 </html>
