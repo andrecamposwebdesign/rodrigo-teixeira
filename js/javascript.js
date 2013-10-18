@@ -1,8 +1,9 @@
 
 
+var home = ('.home')
 
-$( ".home" ).click(function() {
-  	$( ".areas-template" ).hide( "slow" );
+$( "home" ).click(function() {
+  	$( ".areas-template" ).show( "slow" );
 });
 
 

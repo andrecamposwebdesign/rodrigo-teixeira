@@ -1,15 +1,15 @@
-body{margin-top:0;margin-left:0;margin-right:0;z-index:-1}
+body{margin-top:0;margin-left:0;margin-right:0;}
 body {background: linear-gradient(to bottom, #fff 0%,#ddd 100%);}
-.container{background-color:#fff;height:100%;width:70%;}
+.container{background-color:#fff;width:60%;}
 
 .success-message{color:#1a2f4d;font-size:20px;}
 
 /*HEADER*/
-.header{background-color:#fff;box-shadow: 1px 5px 5px #ddd;position:absolute;right:0;z-index: 1;}
+.header{background-color:#fff;box-shadow: 1px 5px 5px #ddd;position:relative;right:0;z-index: 1;}
 .header .row:first-child{margin-top:35px;}
 
 /*Logo*/
-.logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 95px;}
+.logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 90px;}
 
 /*Call today*/
 .tel .call-today{color:#adbcd1;font-size:24px;}
@@ -22,33 +22,37 @@ ul li{text-decoration:none;display:inline-block;}
 li a{color:#1a2f4d;font-size:16px;margin-right:20px;font-weight:bold;font-family:serif;}
 li:last-child a{margin-right:0;}
 li a:hover{text-decoration:none;border-bottom:3px solid #1a2f4d;}
-.menu{margin: 20px 0 5px;text-align:right;float:right;}
+.menu{margin: 5px 0 5px;text-align:right;float:right;}
 ul{padding-left:0;}
 
 /*HOME*/
 /*Banner*/
-.banner{background-image:url('../img/sprite.png');background-position: 0px -757px;height:240px;}
+.banner{background-image:url('../img/sprite.png');background-position: -250px -757px;height:240px;}
 
 /*Areas*/
 .practice-area{color:#1a2f4d;font-size:22px;}
-.area-examples{color:#adbcd1;font-size:18px;}
-.areas{background-image:url('../img/sprite.png');background-position: 205px -42px;
-width:100px;}
+.area-examples{color:#adbcd1;font-size:16px;}
+.areas{background-image:url('../img/sprite.png');background-position: 172px -42px;margin-bottom:10px;}
 .area-click:hover{background-color:#eee;box-shadow:2px -2px 5px #eee;outline:3px solid #aaa;}
-.area-click{cursor:pointer;padding:5px 20px 20px;max-width:240px}
+.area-click{cursor:pointer;padding:5px 20px 10px;max-width:240px;}
 .areas:last-child{background-image:none;}
 .practice-area-preview{color:#666;font-size:13px;padding:10px 0;}
 
-.audience-illustration{background-image:url('../img/sprite.png');background-position: 0px -1953px;height:151px;}
-.retirement-illustration{background-image:url('../img/sprite.png');background-position: 0px -1758px;height:151px;}
-.family-illustration{background-image:url('../img/sprite.png');background-position: 0px -1389px;height:151px;}
-.criminal-illustration{background-image:url('../img/sprite.png');background-position: 0px -1569px;height:151px;}
-.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{margin-top:10px;}
+.audience-illustration{background-image:url('../img/sprite.png');background-position: -2px -1620px;}
+.retirement-illustration{background-image:url('../img/sprite.png');background-position: -1px -1729px;}
+.family-illustration{background-image:url('../img/sprite.png');background-position: -1px -1389px;}
+.criminal-illustration{background-image:url('../img/sprite.png');background-position: -1px -1505px;}
+.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{margin-top:10px;height:101px;border: 1px solid #bbb;box-shadow: 1px 1px 3px #aaa;}
 
 
 /*AREAS SECTION*/
 .area-arrow{font-size:13px;}
 .panel-body{color:#666}
+
+/*PROFILE*/
+.attorney-picture{background-image:url('../img/sprite.png');background-position: -1px -1899px;height:200px;}
+.attorney-name{font-size:20px;}
+.attorney-profile{color:#666;}
 
 /*FOOTER*/
 .logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');
