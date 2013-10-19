@@ -1,5 +1,5 @@
 body{margin-top:0;margin-left:0;margin-right:0;}
-body {background: linear-gradient(to bottom, #fff 0%,#ddd 100%);}
+body {background: linear-gradient(to bottom, #fff 0%,#bbb 100%);}
 .container{background-color:#fff;width:60%;}
 
 .success-message{color:#1a2f4d;font-size:20px;}
@@ -27,7 +27,7 @@ ul{padding-left:0;}
 
 /*HOME*/
 /*Banner*/
-.banner{background-image:url('../img/sprite.png');background-position: -250px -757px;height:240px;}
+.banner{background-image:url('../img/sprite.png');background-position: -250px -757px;height:240px;display:none;}
 
 /*Areas*/
 .practice-area{color:#1a2f4d;font-size:22px;}
@@ -38,11 +38,11 @@ ul{padding-left:0;}
 .areas:last-child{background-image:none;}
 .practice-area-preview{color:#666;font-size:13px;padding:10px 0;}
 
-.audience-illustration{background-image:url('../img/sprite.png');background-position: -2px -1620px;}
-.retirement-illustration{background-image:url('../img/sprite.png');background-position: -1px -1729px;}
+.audience-illustration{background-image:url('../img/sprite.png');background-position: -1px -1620px;}
+.retirement-illustration{background-image:url('../img/sprite.png');background-position: 0px -1729px;}
 .family-illustration{background-image:url('../img/sprite.png');background-position: -1px -1389px;}
 .criminal-illustration{background-image:url('../img/sprite.png');background-position: -1px -1505px;}
-.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{margin-top:10px;height:101px;border: 1px solid #bbb;box-shadow: 1px 1px 3px #aaa;}
+.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{margin-top:10px;height:101px;border: 1px solid #bbb;box-shadow: 1px 1px 3px #aaa;max-width: 136px;}
 
 
 /*AREAS SECTION*/
@@ -52,14 +52,14 @@ ul{padding-left:0;}
 /*PROFILE*/
 .attorney-picture{background-image:url('../img/sprite.png');background-position: -1px -1899px;height:200px;}
 .attorney-name{font-size:20px;}
-.attorney-profile{color:#666;}
+.attorney-profile{color:#666;margin:10px 0;}
 
 /*FOOTER*/
 .logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');
 background-position: 0px 0px;height: 95px;width:305px;}
 .contact{margin:20px 0;}
 .copyright{color:#adbcd1;}
-.especialies{margin-top: 10px;}
+.especialies{margin-top: 10px;display:none;}
 .footer{background-color:#fff;box-shadow: 1px -5px 5px #ddd;position:relative;width:100%;
 	left:0px;bottom:0px;color:#1a2f4d;font-size:14px;padding: 30px 0;}
 
