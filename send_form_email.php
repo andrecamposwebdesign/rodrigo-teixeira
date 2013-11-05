@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "andrecampos.webdesign@gmail.com";
-    $email_subject = "Your email subject line";
+    $email_to = "rodrigo.nteixeira@gmail.com";
+    $email_subject = "Email do Rodrigo";
      
      
     function died($error) {
@@ -59,7 +59,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-echo "<b style="font-size:20px;">Thank you for contacting us. We will be in touch with you very soon.</b>"
+echo "Obrigado pelo mensagem, entraremos em contato o mais rápido possível."
  
 <?php
 }
