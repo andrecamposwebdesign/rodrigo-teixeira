@@ -1,48 +1,43 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="website">
 
 <link rel="icon" href="img/favicon.png" />
 
 <head>
-<title>Teixeira Advogados</title>
+<title>Teixeira e Advogados</title>
 
-<meta name="google-site-verification" content="BKmmuVQac1JM6sKlj3IoXQvffyIRJvJfbicMouA2a88">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta property="og:title" content="teixeiraeadvogados.com - Teixeira, Direito do Consumidor, Família, Desaposentação e Sucessões">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.teixeiraeadvogados.com/">
-<meta property="og:image" content="http://s.glbimg.com/en/ho/static/globocom2012/img/gcom_marca_og.jpg">
-<meta property="og:site_name" content="globo.com">
+<meta property="og:image" content="http://teixeiraeadvogados.com/img/sprite.png">
+<meta property="og:site_name" content="teixeiraeadvogados.com">
 <meta property="og:description" content="Advogado Teixeira Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
-<meta property="fb:page_id" content="224969370851736">
-<meta name="description" content="Só na globo.com você encontra tudo sobre o conteúdo e marcas das Organizações Globo. O melhor acervo de vídeos online sobre entretenimento, esportes e jornalismo do Brasil.">
+<meta name="description" content="Teixeira e Advogado, Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
 <meta name="keywords" content=" Teixeira Advogados ADVOGADO ADVOCACIA advogado rio de janeiro direito familia consumidor desaposentacao sucessoes civel previdenciaria assessoria suporte juridico jurisprudencia juridicos contratos oab forum">
 <meta name="application-name" content="Teixeiraeadvogados.com">
-<meta name="msapplication-TileColor" content="#0669DE">
-<meta name="msapplication-TileImage" content="http://s.glbimg.com/en/ho/static/globocom2012/img/globo-win-tile.png">
-
-
-
-
-
 
 
 <meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<!-- CSS -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
-
+<!-- JS -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/website.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
 
 
+
+
+
+
 </head>
-<body>
+<body ng-controller="MainCtrl">
 <div class="loading">
     <div class="complete-loader"><img src="img/ajax-loader.gif" /> <div class="logo-loader"></div></div>
 </div>
@@ -59,10 +54,10 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-12 menu">
 					<ul>
-						<li class="selected"><a href="#" class="home">Home</a></li>
-						<li><a href="#" class="office">Profissional</a></li>
-						<li><a href="#" class="practice-areas">Áreas de atuação</a></li>
-						<li><a href="contato/contato.html" class="contact">Contato</a></li>
+						<li class="selected"><a ng-click="setRoute('home')" href="#" class="home">Home</a></li>
+						<li><a ng-click="setRoute('profile')" href="#" class="office">Profissional</a></li>
+						<li><a ng-click="setRoute('areas')" href="#" class="practice-areas">Áreas de atuação</a></li>
+						<li><a ng-click="setRoute('contact')" href="#" class="contact">Contato</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-5 col-md-12 tel">
@@ -74,153 +69,11 @@
 </div>
 <div class="container">
 	<div class="row"> 
-		<div class="banner col-lg-12 hide"></div>
-		<div class="especialies">
-			<div class="col-lg-3 col-sm-4 pull-left areas">
-				<div class="area-click">
-					<h4 class="practice-area">CONSUMIDOR</h4><br>
-					<div class="family-illustration"></div>
-					<div class="practice-area-preview">
-						Ações indenizatórias por danos causados em qualquer relação de consumo, tanto no Juizado Especial, quanto na Justiça Comum.
-					</div>
-					<button class="btn btn-primary btn-small" type="button">Mais Informações</button>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-4 pull-left areas">
-				<div class="area-click">
-					<h4 class="practice-area">FAMÍLIA</h4><br>
-					<div class="criminal-illustration"></div>
-					<div class="practice-area-preview">
-						Atuação nas diversas ações concernentes ao campo de Direito de Família, entre elas; divórcio, pensão, guarda de menores, divisão de bens, união estável e casamento.
-					</div>
-					<button class="btn btn-primary btn-small" type="button">Mais Informações</button>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-4 pull-left areas">
-				<div class="area-click">
-					<h4 class="practice-area">DESAPOSENTAÇÃO</h4><br>
-					<div class="audience-illustration"></div>
-					<div class="practice-area-preview">
-						Condução de diversas ações da área previdenciária.
-					</div>
-					<button class="btn btn-primary btn-small" type="button">Mais Informações</button>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-4 pull-left areas">
-				<div class="area-click">
-					<h4 class="practice-area">SUCESSÕES</h4><br>
-					<div class="retirement-illustration"></div>
-					<div class="practice-area-preview">
-						Todas as ações concernentes ao direito de Herança.
-					</div>
-					<button class="btn btn-primary btn-small" type="button">Mais Informações</button>
-				</div>
-			</div>
-		</div>
-		<div class="areas-template hide">
-			<br>
-			<div class="panel-group col-lg-12" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-						<span class="area-arrow">&#9658;</span> Família </a>
-						</h4>
-					</div>
-					<div id="collapseOne" class="panel-collapse collapse in">
-						<div class="panel-body">
-							- Divisão de Bens<br>
-							- Casamento<br>
-							- União Estável<br>
-							- Pensões<br>
-							- Separação, Divórcio<br>
-							- Guarda e Menores<br>
-							- Tutela e Curatela<br>
-							- Parentesco<br>
-							- Filiação<br>
-							- Adoção<br>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-						<span class="area-arrow">&#9658;</span> Sucessões </a>
-						</h4>
-					</div>
-					<div id="collapseTwo" class="panel-collapse collapse">
-						<div class="panel-body">
-							- Herança<br>
-							- Testamentos<br>
-							- Legado<br>
-							- Deserdação<br>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-						<span class="area-arrow">&#9658;</span> Consumidor </a>
-						</h4>
-					</div>
-					<div id="collapseThree" class="panel-collapse collapse">
-						<div class="panel-body">
-							- Venda casada<br>
-							- Desrespeito ao prazo de entrega do produto ou de término de serviço<br>
-							- Aumento abusivo de preços<br>
-							- Quebra de cláusula contratual<br>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-		</div>	
+		
+
+		<div ng-view></div>
 
 
-
-		<div class="profile-template hide">
-			<br>
-			<div class="col-lg-4 col-xs-12 col-sm-6 col-md-6 pull-left">
-				<div class="attorney-picture"></div>
-			</div>
-			<div class="col-lg-7 col-xs-12 col-sm-6 col-md-6 pull-left attorney-profile">
-				<span class="attorney-name">Rodrigo Teixeira</span><br>
-				<strong>OAB/R.J. 126.564</strong><br>
-				e-mail rodrigo.nteixeira@gmail.com<br><br>
-				Advocacia Cível em geral<br>
-				Bacharel em Direito pela Universidade Federal do Rio de Janeiro UFRJ - FND
-			</div>
-			<br>
-		</div>
-		<div class="contact-template hide">
-			<form role="form" name="contactform" action="enviar.php" method="POST">
-				<div class="col-lg-5 contact">
-				  	<div class="form-group col-lg-12">
-				    	<label for="Nome">Nome</label>
-				    	<input type="text" class="form-control" id="Nome" name="Nome">
-				  	</div>
-				  	<div class="form-group col-lg-12"> 
-				    	<label for="Email">E-mail</label>
-				    	<input type="email" class="form-control" id="Email" name="Email">
-				  	</div>
-				  	<div class="form-group col-lg-6">
-				    	<label for="telephone">Telefone</label>
-				    	<input type="tel" class="form-control" id="telephone" name="telephone">
-				  	</div>
-			  	</div>
-			  	<div class="col-lg-6 contact">
-			  		<div class="form-group col-lg-12">
-				    	<label for="Mensagem">Explique sua dúvida ou problema</label>
-				    	<textarea class="form-control" rows="8" name="Mensagem"></textarea>
-				  	</div>
-				  	<div class="col-lg-6">
-				  		<button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
-				  	</div>	
-			  	</div>
-			</form>
-		</div>		
 	</div>
 </div>
 <div class="row">
