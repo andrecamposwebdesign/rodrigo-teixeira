@@ -1,79 +1,96 @@
 <!DOCTYPE HTML>
-<html lang="pt-br" ng-app="website">
-
+<html lang="pt-br">
 <link rel="icon" href="img/favicon.png" />
-
 <head>
-<title>Teixeira e Advogados</title>
-
+<title>Teixeira e Advogados Rio de Janeiro</title>
 <meta property="og:title" content="teixeiraeadvogados.com - Teixeira, Direito do Consumidor, Família, Desaposentação e Sucessões">
-<meta property="og:type" content="website">
 <meta property="og:url" content="http://www.teixeiraeadvogados.com/">
 <meta property="og:image" content="http://teixeiraeadvogados.com/img/sprite.png">
 <meta property="og:site_name" content="teixeiraeadvogados.com">
 <meta property="og:description" content="Advogado Teixeira Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
-<meta name="description" content="Teixeira e Advogado, Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
-<meta name="keywords" content=" Teixeira Advogados ADVOGADO ADVOCACIA advogado rio de janeiro direito familia consumidor desaposentacao sucessoes civel previdenciaria assessoria suporte juridico jurisprudencia juridicos contratos oab forum">
+<meta name="description" content="Teixeira e Advogados, Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
+<meta name="keywords" content=" advogados, advogados rio de janeiro, assessoria juridica, consultor juridico, ação indenizatória, processo por danos morais, orientação jurídica, direito de herança">
 <meta name="application-name" content="Teixeiraeadvogados.com">
-
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="teixeiraeadvogados, advogado, advocacia" >
+<meta name="google-site-verification" content="IUXqvx-w3zXkL8Js2-2Bn1Uao0gpC6vu3spvmBpAX_Q" />
 <!-- CSS -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 1024px) and (min-device-width: 610px)" href="css/ipad.css" type="text/css" />
 <!-- JS -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="libs/angular/angular.min.js"></script>
 <script type="text/javascript" src="js/website.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-
-
-
-
-
-
-
+<?php include_once("analyticstracking.php") ?>
 </head>
-<body ng-controller="MainCtrl">
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="loading">
     <div class="complete-loader"><img src="img/ajax-loader.gif" /> <div class="logo-loader"></div></div>
 </div>
-<!-- HEADER -->
-<div class="row">
-	<div class="header col-lg-12">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<a><div class="logo"></div></a>
-				</div>
-				
-			</div>	
-			<div class="row">
-				<div class="col-lg-6 col-md-12 menu">
-					<ul>
-						<li class="selected"><a ng-click="setRoute('home')" href="#" class="home">Home</a></li>
-						<li><a ng-click="setRoute('profile')" href="#" class="office">Profissional</a></li>
-						<li><a ng-click="setRoute('areas')" href="#" class="practice-areas">Áreas de atuação</a></li>
-						<li><a ng-click="setRoute('contact')" href="#" class="contact">Contato</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-5 col-md-12 tel">
-					<span class="call-today">Fale conosco:</span> <span class="tel-number">(21) 2264-8332</span><br>
+<div>
+	<div>
+		<!-- HEADER -->
+		<div class="row">
+			<div class="header col-lg-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<a class="home"><div class="logo"></div></a>
+						</div>
+						
+					</div>	
+					<div class="row">
+						<div class="col-lg-6 col-md-12 menu">
+							<ul>
+								<li><a class="home">Home</a></li>
+								<li><a class="office">Profissional</a></li>
+								<li><a class="practice-areas">Áreas de atuação</a></li>
+								<li><a class="contact">Contato</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-5 col-md-12 tel">
+							<span class="call-today">Fale conosco:</span> <span class="tel-number">(21) 98390-7326</span><br>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container" >
+			<div class="row"> 
+				<div></div>
+			</div>
+		</div>
 	</div>
-</div>
+</div>	
+
 <div class="container">
-	<div class="row"> 
-		
-
-		<div ng-view></div>
-
-
+	
+	<div class="row">
+	    <div class="col-lg-6 col-xs-12 pull-left text">
+			<h1>Teixeira e Advogados Rio de Janeiro</h1>
+	 Nossos advogados procuram adotar, de forma ágil e eficiente, estratégias específicas para cada cliente, levando em conta a segurança e preservação deste. Através de uma orientação jurídica de qualidade, entregamos ao cliente resultados satisfatórios e atendimento de excelência, com foco em diversos campos da área cível. <br><br>
+	           Possuímos uma equipe de assessoria juridica pronta para grandes causas, além de advogados qualificados para ações de pequenas causas. Para o seu conforto e comodidade, contamos com o serviço de um consultor juridico online para esclarecer eventuais dúvidas, basta nos enviar uma mensagem através de nossa seção de contatos. <br><br>       
+	           A sociedade Teixeira e Advogados empenha-se em traduzir com precisão as necessidades legais de nossos clientes, entregando-lhes benefícios jurídicos concretos e mensuráveis. Buscamos adotar estratégias jurídicas específicas, levando em conta quaisquer peculiaridades, elaborando defesas, recursos, provendo os clientes de soluções jurídicas confiáveis e seguras. <br><br>
+	             Oferecemos ampla e completa assistência jurídica em diversos campos do Direito Cível, com foco em Direito do Consumidor, Família, Contratos e Indenizações. Na área previdenciária atuamos na orientação, prevenção, patrocínio e defesa de ações judiciais em parceria com escritório especializado.<br><br>
+	A adoção de posturas preventivas, e o aproveitamento das oportunidades pela legislação transformam-se em pré-requisitos indispensáveis aos mais diferentes segmentos dos negócios. Por isso, nós do Teixeira e Advogados estamos habilitados para atuação de forma consultiva, preventiva e contenciosa, no âmbito administrativo e judicial. <br><br>
+		</div>
+	    <div class="col-lg-5 col-xs-12 pull-left text">
+	<h1>Orientação Jurídica</h1>
+	             Representamos o cliente em ações judiciais em todas as instâncias. A atuação também compreende o acompanhamento dos processos em todos os seus atos, especialmente na formulação de petições iniciais, contestações, embargos, recursos, memoriais e sustentações orais. Oferecemos orientação e informação legislativa e técnica.
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -83,16 +100,17 @@
 				<strong>Endereço:</strong><br>
 				<span>Av. Graça Aranha, 81, sala 810, Centro, Rio de Janeiro, RJ</span>
 			</div>
-			<div class="col-lg-2 pull-left phones">
-				<strong>Telefone:</strong><br>
-				<span>(21) 83907326</span>
-			</div>
+			<div class="col-lg-5 pull-left">
+				<span class="facebook-like">Acompanhe notícias do meio jurídico no Facebook:</span>
+				<div class="fb-like" data-href="http://www.facebook.com/teixeiraeadvogados" data-width="450" data-show-faces="true" data-send="true"></div>
+			</div>	
 			<div class="col-lg-12 pull-left copyright">
 				© 2013 All rights reserved - Todos direitos reservados
 			</div>
 		</div>
 	</div>
 </div>
+	
 <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

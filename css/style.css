@@ -1,10 +1,11 @@
 body{margin-top:0;margin-left:0;margin-right:0;}
 body {background: linear-gradient(to bottom, #fff 0%,#ccc 100%);font-size:15px;}
 .container{width:100%;}
-
+a{cursor:pointer;}
+h1{font-size:20px;}
 .success-message{color:#1a2f4d;font-size:20px;}
 
-
+.text{background-color:#fff;padding:15px;border-radius:15px;box-shadow:1px 1px 5px #333;margin-right:10px;margin-bottom:20px;}
 .loading { position:fixed; left:0; top:0; width:100%; height:100%;background-color:transparent;z-index:2;background-color:#f4f4f4;
 opacity:0.7;}
 .loading .complete-loader{margin-top: 15%;margin-left: 45%;}
@@ -19,12 +20,12 @@ opacity:0.7;}
 .logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 95px;margin-top: 10px;}
 
 /*Call today*/
-.tel .call-today{color:#adbcd1;font-size:18px;}
+.tel .call-today,.facebook-like{color:#adbcd1;font-size:18px;}
 .tel .tel-number{color:#1a2f4d;font-size:20px;display:inline-block;}
 .tel{text-align:right;float:right;margin-bottom:10px;}
 
 /*Menu*/
-.selected a{color:#adbcd1;}
+.active a{color:#adbcd1;}
 ul li{text-decoration:none;display:inline-block;}
 li a{color:#1a2f4d;font-size:16px;margin-right:24px;}
 li:last-child a{margin-right:0;}
@@ -57,7 +58,9 @@ a:hover{text-decoration:none;}
 .panel-body{color:#666}
 
 /*PROFILE*/
-.attorney-picture{background-image:url('../img/sprite.png');background-position: -1px -1899px;height:300px;width:330px;}
+.attorney-picture{background-image:url('../img/sprite.png');background-position: -1px -1899px;height:300px;width: 372px;
+margin-bottom: 24px;border: 13px solid #fff;
+box-shadow: 1px 3px 7px #aaa;}
 .attorney-name{font-size:20px;}
 .attorney-profile{color:#666;margin:75px 0 10px;}
 
@@ -66,7 +69,7 @@ a:hover{text-decoration:none;}
 background-position: 0px 0px;height: 95px;width:305px;}
 .contact{margin:20px 0;}
 .copyright{color:#adbcd1;}
-.especialies{margin-top: 10px;display:none;}
+.especialies{margin-top: 10px;}
 .footer{background-color:#fff;box-shadow: 1px -5px 5px #ddd;position:relative;width:100%;
 	left:0px;bottom:0px;color:#1a2f4d;font-size:14px;padding: 30px 0;}
 

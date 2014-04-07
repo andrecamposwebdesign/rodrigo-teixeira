@@ -1,8 +1,3 @@
-
-
-
-
-
 $(document).ready(function() {
   	$( ".banner, .especialies" ).fadeIn( 2500 );
 });
